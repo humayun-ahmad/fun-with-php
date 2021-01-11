@@ -23,15 +23,16 @@
 
 <h4>$_SERVER Variable</h4>
     <?php
-    echo $_SERVER['PHP_SELF']."<br>";
+    echo "<b>PHP SELF : </b>".$_SERVER['PHP_SELF']."<br>";
     echo "<b>SERVER_ADDR : </b>".$_SERVER['SERVER_ADDR']."<br>";
-    echo $_SERVER['SERVER_NAME']."<br>";
-    echo $_SERVER['SCRIPT_NAME']."<br>";
-    echo $_SERVER['SERVER_NAME']."<br>";
-    echo $_SERVER['SERVER_NAME']."<br>";
-    echo $_SERVER['SERVER_NAME']."<br>";
-    echo $_SERVER['SERVER_NAME']."<br>";
-    echo $_SERVER['SERVER_NAME']."<br>";
+    echo "<b>SERVER_Name : </b>".$_SERVER['SERVER_NAME']."<br>";
+    echo "<b>SCRIP_Name : </b>".$_SERVER['SCRIPT_NAME']."<br>";
+    echo "<b>HTTP_USER_AGENT : </b>".$_SERVER['HTTP_USER_AGENT']."<br>";
+    echo "<b>REQUEST_URI : </b>".$_SERVER['REQUEST_URI']."<br>";
+    echo "<b>SERVER_SOFTWARE : </b>".$_SERVER['SERVER_SOFTWARE']."<br>";
+    echo "<b>SERVER_ADMIN : </b>".$_SERVER['SERVER_ADMIN']."<br>";
+    echo "<b>SERVER_ADDR : </b>".$_SERVER['SERVER_NAME']."<br>";
+    echo "<b>REQUEST METHOD : </b>".$_SERVER['REQUEST_METHOD']."<br>";
 
     ?>
 </body>
