@@ -27,6 +27,7 @@ $data = mysqli_query($conn,$sql);
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
+                <th>Action</th>
             </tr>
             <?php
                 while($raw = mysqli_fetch_assoc($data)){
@@ -36,6 +37,11 @@ $data = mysqli_query($conn,$sql);
                 <td><?php echo $raw['firstname'] ?></td>
                 <td><?php echo $raw['lastname'] ?></td>
                 <td><?php echo $raw['email'] ?></td>
+                <td>
+                    <a href="#" class="btn btn-info">Show</a>
+                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="delete.php?id=<?php echo $raw['id'] ?>" class="btn btn-danger">Delete</a>
+                </td>
             </tr>
             <?php
                 }
