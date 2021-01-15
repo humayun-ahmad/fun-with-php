@@ -9,6 +9,8 @@
 <body>
     <div class="container">
         <div class="jumbotron">
+
+        <a href="../../data read and show/all_contact.php">All Contact</a>
             <section class="form">
                 <form action="insert.php" method="post">
                 <div class="form-group">
