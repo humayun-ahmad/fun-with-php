@@ -9,7 +9,7 @@ $sql = "INSERT INTO information (firstname, lastname, email) VALUE ('$first_name
 $result = mysqli_query($conn, $sql) or die("this is insert file: ".mysqli_error($conn));
 
 if($result){
-    header("location: message.php");
+    header("location: ../../data read and show/all_contact.php");
 }else{
     echo "Data Not inserted";
 }
