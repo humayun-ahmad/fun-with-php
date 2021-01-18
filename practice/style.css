@@ -1,0 +1,11 @@
+.form_part{
+
+	margin-top: 50px;
+}
+.text-center {
+    text-align: center!important;
+    background-color: moccasin;
+    padding: 10px;
+    margin-bottom: 44px;
+    border-radius: 50%;
+}
