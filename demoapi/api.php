@@ -22,10 +22,26 @@
 			break;
 	}
 
-	public function getmethod(){
+	function getmethod(){
 		include("db.php");
-		$sql = ""
-		if()
+		$sql = "SELECT * FROM information";
+		$result = mysqli_query($connection, $sql);
+		
+		
+
+		if(mysqli_num_rows($result)){
+			$rows = array();
+
+			while($data = mysqli_fetch_assoc($result)){
+				$rows['result'][] = $data;
+			}
+			
+			echo json_encode($rows);
+			
+		}
+		else{
+			echo "No data into database, Please check your database!";
+		}
 	}
 
 
