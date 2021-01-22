@@ -38,7 +38,6 @@
     print_r($new_list);
     echo "</pre>";
 
-
     ?>
      <hr>
 
