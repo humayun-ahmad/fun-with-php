@@ -8,7 +8,20 @@
 <body>
     <h4>Array</h4>
     <hr>
+	<hr>
     <?php
+	
+	$string = "Hello world country"; 
+	$array = explode(' ',$string);
+	foreach($array as $ar){
+		$ar = substr($ar,0,-3).'xxx';
+		echo $ar." ";
+	}
+	
+	//echo substr($string, 0, -3).'xxx';
+	echo $array;
+	
+	echo"<hr><hr>";
     $list = array('rahim', 'karim', 'rafiq', 'shoel', 'etc');
     echo "<h4><b>Index array:</b></h4><hr>";
 
