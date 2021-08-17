@@ -21,8 +21,4 @@
 
     echo nl2br("\n".str_replace("world", "Dolly", "Hello world!")."\n" );
 
-
-    
-
-
 ?>
