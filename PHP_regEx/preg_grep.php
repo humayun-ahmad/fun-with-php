@@ -1,4 +1,12 @@
 <?php
+/* 
+Syntax: preg_grep(pattern, input, flags)
+
+flags	Optional. There is only one flag for this function. Passing the constant PREG_GREP_INVERT will make the function return only items that do not match the pattern.
+
+*/
+
+
 $input = [
   "Red",
   "Pink",
